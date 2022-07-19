@@ -1,0 +1,41 @@
+.admin {
+  height: 94vh;
+  padding: 2rem 5rem;
+}
+
+.admin__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.admin__content {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.admin__content--left {
+  flex: 1;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.admin__content--right {
+  flex: 1;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 850px) {
+  .admin {
+    padding: 1rem;
+  }
+  .admin__content {
+    flex-direction: column;
+  }
+
+  .admin__products {
+    height: 300px;
+    overflow: scroll;
+  }
+}

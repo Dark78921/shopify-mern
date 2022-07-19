@@ -1,0 +1,41 @@
+.shops {
+  display: flex;
+  margin: 10px 0;
+  padding: 0 18px;
+  width: 100%;
+}
+
+.shops_category {
+  flex: 0.15;
+}
+
+.shops__items {
+  flex: 0.95;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.shops__items--lists {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shops__item {
+  min-width: 320px;
+  flex: 0.5;
+  margin: 0 15px;
+}
+
+@media (max-width: 915px) {
+  .shops {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .shops__items {
+    justify-content: center;
+    margin-right: 2rem;
+  }
+}

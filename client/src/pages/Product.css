@@ -1,0 +1,147 @@
+.product {
+  padding: 1rem 2rem;
+}
+
+.product__details {
+  display: flex;
+}
+
+.product__left,
+.product__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__left > img {
+  width: 100%;
+  object-fit: contain;
+  height: 450px;
+  padding: 2rem;
+}
+
+.product__name {
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.2rem;
+}
+
+.product__category {
+  padding: 5px 15px;
+  background: yellow;
+  width: fit-content;
+  font-size: smaller;
+  letter-spacing: 0.8px;
+  color: #715d5da6;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.product__price {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #3e3e3e;
+  margin-bottom: 0.8rem;
+}
+
+.product__taxes {
+  font-size: 12px;
+}
+
+.product__desc {
+  margin-bottom: 1rem;
+}
+
+.product__addBasket {
+  /* display: flex; */
+  margin-top: auto;
+}
+
+.product__deleveryPin {
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.product__deleveryAdOns {
+  font-size: 12px;
+  font-weight: 300;
+}
+.product__deleveryAdOns > span {
+  padding: 2px 15px;
+  border: 1px solid #c7c6c6;
+}
+
+.product__dummy {
+  display: flex;
+  margin-top: 3rem;
+  padding: 15px 0;
+}
+
+.dummy__left {
+  border-right: 1px solid #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+.dummy__right {
+  border-left: 1px solid #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+.dummy__context {
+  margin-bottom: 20px;
+}
+
+.dummy__head {
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(14, 14, 14, 0.67);
+  margin-bottom: 0;
+}
+
+.dummy__body {
+  width: 253px;
+  opacity: 0.67;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #0e0e0e;
+}
+
+@media (max-width: 548px) {
+  .product__details {
+    flex-direction: column;
+  }
+
+  .product__dummy {
+    flex-direction: column;
+  }
+
+  .dummy__left {
+    border-right: none;
+    border-bottom: 1px solid #0e0e0e;
+  }
+  .dummy__right {
+    padding-top: 1rem;
+    border-left: none;
+    border-top: 1px solid #0e0e0e;
+  }
+  .product__left > img {
+    width: 100%;
+    object-fit: scale-down;
+    height: 200px;
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,36 @@
+.search {
+  position: relative;
+  z-index: 10;
+}
+
+.search__lists {
+  position: fixed;
+  background-color: rgba(187, 176, 176, 0.67);
+  border-radius: 9px;
+  padding: 2rem;
+  width: 100%;
+  color: rgb(55, 52, 52);
+}
+
+.search__lists > ul {
+  list-style-type: none;
+  z-index: 15;
+}
+
+.search__lists > ul > li {
+  font-size: larger;
+  border: 0.5px solid rgb(121, 119, 119);
+  border-radius: 9px;
+  padding: 0.4rem;
+  margin: 5px auto;
+  cursor: pointer;
+}
+
+.search__lists > ul > li > a {
+  text-decoration: none;
+  color: rgb(55, 52, 52);
+}
+
+.search__lists > ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}

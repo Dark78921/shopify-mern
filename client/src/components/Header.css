@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  align-items: center;
+  background-color: rgb(23 30 45);
+  color: rgb(216, 205, 205);
+}
+
+.header a {
+  color: rgb(216, 205, 205);
+  text-decoration: none;
+}
+
+.header__brand {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.header__ctx {
+  display: flex;
+}
+
+.header__ctx > button {
+  color: rgb(216, 205, 205);
+  font-size: 10px;
+}
+
+.MuiListItem-root a {
+  color: #000;
+  text-decoration: none;
+}

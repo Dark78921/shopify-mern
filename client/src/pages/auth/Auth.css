@@ -1,0 +1,18 @@
+.login {
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+}
+
+.login > form {
+  margin: 4rem 2rem;
+  transform: translateY(10%);
+}
+
+.login > form > h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}

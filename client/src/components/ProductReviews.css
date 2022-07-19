@@ -1,0 +1,29 @@
+.productReview {
+  display: flex;
+  margin: 2rem 25px;
+}
+
+.productReview__left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.productReview__right {
+  flex: 1;
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.productReview__preview {
+  color: rgb(92, 80, 80);
+  text-align: center;
+}
+
+@media (max-width: 548px) {
+  .productReview {
+    flex-direction: column;
+  }
+}
